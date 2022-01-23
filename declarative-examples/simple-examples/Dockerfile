@@ -3,4 +3,8 @@ FROM node:14-alpine
 # Create app directory
 WORKDIR /usr/src/app
 
-COPY ./os_version.js ./
+RUN pwd
+
+COPY os_version.js ./
+
+RUN echo Inside container
