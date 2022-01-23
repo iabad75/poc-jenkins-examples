@@ -4,6 +4,8 @@ FROM node:14-alpine
 WORKDIR /usr/src/app
 
 RUN pwd
+RUN ls -all
+RUN pwd
 
 COPY os_version.js ./
 
