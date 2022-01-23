@@ -1,12 +1,10 @@
 FROM node:14-alpine
 
-RUN pwd
-RUN ls -all
-
 # Create app directory
 WORKDIR /usr/src/app
-RUN pwd
 
-COPY os_version.js ./
+# copy node app
+COPY declarative-examples/simple-examples/os_version.js ./
 
+# a simple echo from container executed
 RUN echo Inside container
